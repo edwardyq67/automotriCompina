@@ -21,15 +21,15 @@ export function WhatappAcordeon({ children }) {
                 }}
                 onMouseOver={() => setIsOpen(true)}
                 onMouseOut={() => setIsOpen(false)}
-                className="z-30 absolute translate-x-[-100px] translate-y-3 bg-secondary transition-max-height duration-100 ease-in-out overflow-hidden pl-4 pr-4 rounded"
+                className="z-30 absolute translate-x-[-100px] translate-y-2 bg-gray-900  transition-max-height duration-100 ease-in-out overflow-hidden pl-4 pr-4 rounded"
             >
-                <div className="normal-case flex md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
+                <div className="normal-case flex my-2 p-2 rounded hover:bg-primary-600 md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
                     <span className='text-green-500'><FaWhatsapp size={20} /></span>976536498
                 </div>
-                <div className="normal-case flex md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
+                <div className="normal-case flex my-2 p-2 hover:bg-primary-600  rounded md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
                     <span className='text-green-500'><FaWhatsapp size={20} /></span>957957609
                 </div>
-                <div className="normal-case flex md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
+                <div className="normal-case flex my-2 p-2 hover:bg-primary-600  rounded md:opacity-70 opacity-100 md:hover:opacity-100 transition-all duration-200 justify-center items-center gap-2">
                     <span className='text-green-500'><FaWhatsapp size={20} /></span>986341390
                 </div>
             </div>

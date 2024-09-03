@@ -61,13 +61,13 @@ export default function NavBar() {
                     {NavBarMenu.map(menu => (
                         <li
                             key={menu.id}
-                            className='font-poppins uppercase font-medium text-lg text-gray-400  focus:text-white hover:text-white active:text-white transition-all duration-200 hover:shadow-[0_3px_0_-1px_#ffffff] px-2'
+                            className='font-poppins uppercase font-medium text-base text-gray-400  focus:text-white hover:text-white active:text-white transition-all duration-200 hover:shadow-[0_3px_0_-1px_#ffffff] px-2'
                         >
                             {menu.submenu ? (
                                 <Accordionpc title={menu.titulo}>
                                     <ul className="">
                                         {menu.submenu.map((sub, idx) => (
-                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-xl py-1">
+                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-lg py-1">
                                                 <Link to={sub.Link}>{sub.titulo}</Link>
                                             </li>
                                         ))}

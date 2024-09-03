@@ -20,19 +20,19 @@ function NavInfo() {
     }, []);
 
     return (
-        <div className={`${isScrolled ? 'flex bg-primary w-full h-10 justify-between items-center text-white px-10' : 'hidden'}`}>
-            <div className="flex items-center gap-2">
-                <SiGmail color="red" />
-                <span>cesar.delgado@minconesport.pe</span>
+        <div className={`${isScrolled ? 'flex bg-gray-900 w-full h-10 justify-between items-center text-white px-2 sm:px-10' : 'hidden'}`}>
+            <div className="flex text-white hover:text-primary-600 transition-all duration-200 items-center gap-2">
+                <SiGmail  />
+                <span className='cursor-pointer'>cesar.delgado@minconesport.pe</span>
             </div>
-            <div className="flex gap-5">
-                <div className="p-1 bg-transparent hover:bg-secondary rounded-md cursor-pointer transition-all duration-300">
+            <div className="flex gap-1 sm:gap-5">
+                <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
                     <FaFacebook size={20} />
                 </div>
-                <div className="p-1 bg-transparent hover:bg-secondary rounded-md cursor-pointer transition-all duration-300">
+                <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
                     <FaInstagram size={20} />
                 </div>
-                <div className="p-1 bg-transparent hover:bg-secondary rounded-md cursor-pointer transition-all duration-300">
+                <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
                     <WhatappAcordeon />
                 </div>
             </div>

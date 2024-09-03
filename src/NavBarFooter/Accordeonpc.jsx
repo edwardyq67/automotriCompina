@@ -21,7 +21,7 @@ export function Accordionpc({ title, children }) {
                 style={{
                     maxHeight: isOpen ? `200px` : '0px',
                 }}
-                className="transition-max-heigh rounded-lg top-0 translate-y-14 translate-x-[-150px] absolute duration-200 ease-in-out overflow-hidden pl-4 pr-4"
+                className="transition-max-heigh rounded-lg top-0 translate-y-10 translate-x-[-150px] absolute duration-200 ease-in-out overflow-hidden pl-4 pr-4"
             >
                 <div
                     className="normal-case py-3 px-10 rounded-md"

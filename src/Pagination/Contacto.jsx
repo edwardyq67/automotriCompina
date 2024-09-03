@@ -28,9 +28,9 @@ function Contacto() {
       </div>
       <div className="container  mx-auto pb-10 md:pb-20 px-2 ">
         <div
-          className="block rounded-lg bg-white px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300"
+          className="block rounded-lg bg-white px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16  -mt-[100px] backdrop-blur-[30px] border border-gray-300"
         >
-          <div className="grid gap-10 lg:flex ">
+          <div className="grid gap-5 lg:flex ">
             <div className=" w-full shrink-0 grow-0 basis-auto md:px-3  lg:w-5/12 lg:px-6">
               <form className='grid gap-4'>
                 <div className="" data-te-input-wrapper-init>
@@ -60,8 +60,9 @@ function Contacto() {
                 </div>
               </form>
             </div>
-            <div className="grid gap-10">
-              <div className="flex justify-start items-center gap-4">
+            <div className=' w-full py-10'>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="flex justify-start items-start gap-4">
                 <span className='bg-primary-600 p-2 rounded text-white'>
                   <FaMapMarkerAlt size={20} />
                 </span>
@@ -70,20 +71,20 @@ function Contacto() {
                   <p className='font-poppins text-gray-700 text-base'>Av. Paseo de la Reina, 12345, Lima, Perú</p>
                 </div>
               </div>
-              <div className="flex justify-start items-center gap-4">
+              <div className="flex justify-start items-start gap-4">
                 <span className='bg-primary-600 p-2 rounded text-white'>
                   <FaWhatsapp size={20} />
                 </span>
-                <div className="grid">
+                <div className="grid gap-1">
                   <h4 className='text-xl text-primary-800  font-semibold'>whatsapp</h4>
-                  <ul className='flex divide-x-2 gap-2 divide-primary-800'>
+                  <ul className='grid gap-1'>
                     <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>976536498</li>
-                    <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 pl-2 cursor-pointer text-black hover:scale-105'>957957609</li>
-                    <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 pl-2 cursor-pointer text-black hover:scale-105'>986341390</li>
+                    <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500  cursor-pointer text-black hover:scale-105'>957957609</li>
+                    <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500  cursor-pointer text-black hover:scale-105'>986341390</li>
                   </ul>
                 </div>
               </div>
-              <div className="flex justify-start items-center  gap-4">
+              <div className="flex justify-start items-start gap-4">
                 <span className='bg-primary-600 p-2 rounded text-white'>
                   <BiLogoGmail  size={20} />
                 </span>
@@ -96,13 +97,15 @@ function Contacto() {
                   </ul>
                 </div>
               </div>
-              <div className="flex justify-evenly items-center  ">
+              <div className="flex justify-evenly items-center max-w-60   ">
 
                 <img className='cursor-pointer hover:scale-105 transition-all duration-200 w-10' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" />
                 <img className='cursor-pointer hover:scale-105 transition-all duration-200 w-12 ml-4' src="https://t3.ftcdn.net/jpg/05/42/99/02/360_F_542990265_jDTgAc4HLdrhAt8TGxGySA4O3TcXtO0j.webp" alt="" />
                 <img className='cursor-pointer hover:scale-105 transition-all duration-200 w-16' src="https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-Vertical-Logo.wine.svg" alt="" />
               </div>
             </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -7,20 +7,29 @@ import Nosotros from './Pagination/Nosotros'
 import NavBar from './NavBarFooter/NavBar'
 import Footer from './NavBarFooter/Footer'
 import NavInfo from './NavBarFooter/NavInfo'
+import MantenimientoPreventivo from './Pagination/sevicios/MantenimientoPreventivo'
+import MantenimientoCorrectivo from './Pagination/sevicios/MantenimientoCorrectivo'
+import ReparacionMotores from './Pagination/sevicios/ReparacionMotores'
+import PlanchadoPintura from './Pagination/sevicios/PlanchadoPintura'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <HashRouter>
-      <NavInfo/>
-      <NavBar/>
+      <NavInfo />
+      <NavBar />
       <Routes>
-        <Route path='/' element={<Inicio/>}/>
-        <Route path='/nosotros' element={<Nosotros/>}/>
-        <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/' element={<Inicio />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/contacto' element={<Contacto />} />
+        {/* servicios */}
+        <Route path='/mantenimientoPreventivo' element={<MantenimientoPreventivo />} />
+        <Route path='/mantenimientoCorrectivo' element={<MantenimientoCorrectivo />} />
+        <Route path='/reparacionMotores' element={<ReparacionMotores />} />
+        <Route path='/planchadoPintura' element={<PlanchadoPintura />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </HashRouter>
   )
 }

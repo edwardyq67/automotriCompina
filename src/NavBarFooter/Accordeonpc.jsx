@@ -27,7 +27,7 @@ export function Accordionpc({ title, children }) {
                     className="normal-case py-3 px-10 rounded-md"
                     style={{
                         backdropFilter: 'blur(10px)', // Ajusta el desenfoque aquí
-                        backgroundColor: 'rgba(0, 0, 0, 0.6)' // Opcional: color de fondo semitransparente
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)' // Opcional: color de fondo semitransparente
                     }}
                 >
                     {children}

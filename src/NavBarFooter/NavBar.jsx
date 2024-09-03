@@ -32,10 +32,10 @@ export default function NavBar() {
             titulo: "Servicios",
             Link: "/servicios",
             submenu: [
-                { titulo: "Mantenimiento preeventivo e inspeccion general", Link: "/servicio1" },
-                { titulo: "Mantenimiento correctivo", Link: "/servicio2" },
-                { titulo: "Reparacion de motores y transmisiones AT/MT", Link: "/servicio3" },
-                { titulo: "Planchado y Pintura", Link: "/servicio4" }
+                { titulo: "Mantenimiento preeventivo e inspeccion general", Link: "/mantenimientoPreventivo" },
+                { titulo: "Mantenimiento correctivo", Link: "/mantenimientoCorrectivo" },
+                { titulo: "Reparacion de motores y transmisiones AT/MT", Link: "/reparacionMotores" },
+                { titulo: "Planchado y Pintura", Link: "/planchadoPintura" }
             ]
         },
         {

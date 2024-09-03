@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 
 function Nosotros() {
   const dueños = [{
@@ -25,8 +26,8 @@ function Nosotros() {
           <p className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Cuidamos tu vehículo como si fuera el nuestro. </p>
         </div>
 
-        <div className="relative">
-          <img className=" w-full h-full  " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
+        <div className="relative min-h-40">
+          <img className=" w-full min-h-60  " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
           <div
             className="absolute w-full h-full top-0"
             style={{ backgroundColor: `rgba(0, 0, 0, .6)` }}
@@ -64,15 +65,17 @@ function Nosotros() {
       <section
         className="relative py-10 sm:py-20 section-background "
       >
-        <div className="container relative">
+        <div className="container relative px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">
             <div className="flex flex-col justify-center p-4 font-poppins">
               <h3 className="text-2xl text-primary-800  font-semibold mb-2">Mision</h3>
               <p className="text-gray-700 mb-4 text-base">
-              Proporcionar un servicio de calidad para brindar soluciones fiables y duraderas que conserven los autos en un estado óptimo, eficiente y seguro por medio de personal altamente capacitado, motivado y productivo
-              que tiene como principal interés la seguridad y satisfacción de nuestros clientes. 
+                Proporcionar un servicio de calidad para brindar soluciones fiables y duraderas que conserven los autos en un estado óptimo, eficiente y seguro por medio de personal altamente capacitado, motivado y productivo
+                que tiene como principal interés la seguridad y satisfacción de nuestros clientes.
               </p>
+
             </div>
+
             <div className="flex items-center justify-center">
               <img className="w-full h-auto rounded-none md:rounded-lg shadow-lg text-base" src="https://boxen.com.mx/wp-content/uploads/2024/03/empresa.webp" alt="Taller Automotriz" />
             </div>
@@ -82,22 +85,32 @@ function Nosotros() {
       <section
         className="relative py-10 sm:py-20 section-background2 "
       >
-        <div className="container relative">
+        <div className="container relative px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center order-2 lg:order-1">
               <img className="w-full h-auto rounded-none md:rounded-lg shadow-lg text-base" src="https://boxen.com.mx/wp-content/uploads/2024/03/empresa.webp" alt="Taller Automotriz" />
             </div>
-            <div className="flex flex-col justify-center p-4 font-poppins">
+            <div className="flex flex-col justify-center p-4 font-poppins order-1 lg:order-2">
               <h3 className="text-2xl text-secondary-800  font-semibold mb-2">Vision</h3>
               <p className="text-gray-700 mb-4 text-base">
-             Ser reconocidos en el mercado como una de las principales empresas más confiables para la reparación integral automotriz, la mejor alternativa de diagnóstico y reparación autos de alta gama y gestión del
-             mantenimiento de flotas vehiculares. 
+                Ser reconocidos en el mercado como una de las principales empresas más confiables para la reparación integral automotriz, la mejor alternativa de diagnóstico y reparación autos de alta gama y gestión del
+                mantenimiento de flotas vehiculares.
               </p>
             </div>
           </div>
         </div>
       </section>
-
+      <section>
+        <ReactPlayer
+          url="https://boxen.com.mx/wp-content/uploads/2024/05/Video-Boxen-Marcas-1280X720-Lower.mp4"
+          playing={true}    // Inicia la reproducción automáticamente
+          loop={true}       // Reproduce el video en bucle
+          controls={false}  // Oculta los controles (opcional)
+          muted={true}      // Silencia el video (opcional)
+          width="100%"      // Ajusta el ancho al contenedor
+          height="100%"     // Ajusta la altura al contenedor
+        />
+      </section>
     </main>
   )
 }

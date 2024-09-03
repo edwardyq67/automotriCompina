@@ -20,7 +20,7 @@ function NavInfo() {
     }, []);
 
     return (
-        <div className={`${isScrolled ? 'hidden sm:flex bg-gray-900 w-full h-10 justify-between items-center text-white px-2 sm:px-10' : 'hidden'}`}>
+        <div className={`${isScrolled ? 'hidden md:flex bg-secondary-950 w-full z-20 h-10 justify-between items-center text-white px-2 md:px-10' : 'hidden'}`}>
             <div className="flex text-white hover:text-primary-600 transition-all duration-200 items-center gap-2">
                 <SiGmail  />
                 <span className='cursor-pointer'>cesar.delgado@minconesport.pe</span>

@@ -129,7 +129,7 @@ function Inicio() {
         <div className="container relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">
             <div className="flex flex-col justify-center p-4 font-poppins">
-              <h3 className="text-2xl  font-semibold mb-2">EL MEJOR TALLER AUTOMOTRIZ PARA AUTOS PREMIUM</h3>
+              <h3 className="text-2xl text-primary-800  font-semibold mb-2">EL MEJOR TALLER AUTOMOTRIZ PARA AUTOS PREMIUM</h3>
               <p className="text-gray-700 mb-4 text-base">
                 Mincone Sport es una empresa de servicio automotriz, creada  en vista de no haber  un taller especialista alternativo de las grandes marcas de lujo y alta gama, con la misma confianza de una concesionaria de marca, Mincone Sport se fundo en 2016, sin embargo su fundador Domenico Mincone con estudios de
                 Ingeniería Mecánica Automotriz en Italia, tiene mas de 25 años de experiencia en el rubro, especializándose en autos de alta gama y deportivos
@@ -157,7 +157,7 @@ function Inicio() {
       </section>
       <section className='bg-white py-10 sm:py-20 px-2'>
         <div className="container grid text-black text-center gap-10">
-          <h2 className='text-3xl md:text-4xl uppercase font-poppins font-semibold'>nuestro servicios</h2>
+          <h2 className='text-3xl md:text-4xl uppercase text-primary-800 font-poppins font-semibold'>nuestro servicios</h2>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 text-black font-poppins text-lg font-semibold">
 
             {
@@ -168,7 +168,7 @@ function Inicio() {
                   </button>
                   <div className="p-5 grid ">
                     <span >
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary-700">
                         {valorServicio.title}
                       </h5>
                     </span>

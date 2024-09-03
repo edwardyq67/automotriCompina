@@ -52,7 +52,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed px-2 md:px-10 p-2 py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent '
+            className={`fixed md:px-10 p-2 py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
                 }`}
         >
             <div className='flex justify-between items-center relative'>
@@ -67,7 +67,7 @@ export default function NavBar() {
                                 <Accordionpc title={menu.titulo}>
                                     <ul className="">
                                         {menu.submenu.map((sub, idx) => (
-                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-lg py-1">
+                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-base py-1">
                                                 <Link to={sub.Link}>{sub.titulo}</Link>
                                             </li>
                                         ))}
@@ -79,19 +79,19 @@ export default function NavBar() {
                         </li>
                     ))}
                 </ul>
-                <div className="md:hidden block" onClick={() => setOpen(!open)}>
+                <div className="md:hidden flex" onClick={() => setOpen(!open)}>
                     <GiHamburgerMenu color='white' size={24} />
                 </div>
                 <div
-                    className={`fixed top-0 right-0 z-40 h-screen  p-4 overflow-y-auto transition-transform ${open ? 'translate-x-0' : 'translate-x-full'
-                        } bg-white w-80 dark:bg-black`}
+                    className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${open ? 'translate-x-0' : 'translate-x-full'
+                        } bg-white w-80 dark:bg-secondary-950`}
                     tabIndex="-1"
                     aria-labelledby="drawer-right-label"
                 >
                     <div className="flex justify-end" >
                         <MdClose color='white' size={30} onClick={() => setOpen(!open)} />
                     </div>
-                    <ul className='font-semibold px-2 uppercase  text-black py-5  rounded-lg'>
+                    <ul className='font-semibold uppercase  text-black py-5  rounded-lg'>
                         {NavBarMenu.map(menu => (
                             <li key={menu.id} className='mb-4 text-2xl text-white'>
                                 {menu.submenu ? (

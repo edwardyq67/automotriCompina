@@ -52,7 +52,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed md:px-10 p-2 py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
+            className={`fixed px-2 md:px-10 p-2 py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
                 }`}
         >
             <div className='flex justify-between items-center relative'>

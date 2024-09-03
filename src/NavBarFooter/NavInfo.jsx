@@ -25,7 +25,7 @@ function NavInfo() {
                 <SiGmail  />
                 <span className='cursor-pointer'>cesar.delgado@minconesport.pe</span>
             </div>
-            <div className="flex gap-1 sm:gap-5">
+            <div className="flex gap-0 sm:gap-5">
                 <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
                     <FaFacebook size={20} />
                 </div>

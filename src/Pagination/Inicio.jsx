@@ -64,8 +64,8 @@ function Inicio() {
     <main>
       <section className="relative w-full">
         <div className="absolute inset-x-0 bottom-0 w-full z-10 grid gap-2 pb-32 px-2 sm:px-0">
-          <h1 className='text-white uppercase text-5xl text-center font-bold font-poppins'>Especialistas en autos Europeos y Premium</h1>
-          <p className='text-2xl font-poppins font-medium text-center text-gray-200'>Por profesionales para los apasionados de los autos </p>
+          <h1 className='text-white uppercase text-4xl md:text-5xl text-center font-bold font-poppins'>Especialistas en autos Europeos y Premium</h1>
+          <p className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Por profesionales para los apasionados de los autos </p>
         </div>
         <Swiper
           spaceBetween={30}
@@ -105,7 +105,7 @@ function Inicio() {
         </Swiper>
       </section>
       <section className='container py-20 sm:py-40'>
-        <div className="grid sm:flex justify-center gap-y-20 sm:justify-between gap-x-2">
+        <div className="grid sm:flex justify-center  gap-y-10 md:gap-y-20 sm:justify-between gap-x-2">
           <div className="grid justify-center items-center text-center gap-5">
             <img className='w-28 md:w-32 mx-auto' src="https://boxen.com.mx/wp-content/uploads/2024/04/01.webp" alt="" />
             <h3 className='text-xl md:text-2xl font-poppins font-medium'>SERVICIOS</h3>

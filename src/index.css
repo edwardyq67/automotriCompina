@@ -24,6 +24,6 @@
   }
   @media (min-width: 1024px) {
     .section-background {
-        background: linear-gradient(to right, #f7f7f7 70%, #000000 30%);
+        background: linear-gradient(to right, #f7f7f7 70%, #669850 30%);
     }
   }

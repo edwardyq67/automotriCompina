@@ -105,12 +105,13 @@ function Inicio() {
         <div className="container relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">
             <div className="flex flex-col justify-center p-4 font-poppins">
-              <h3 className="text-2xl font-semibold mb-2">EL MEJOR TALLER AUTOMOTRIZ PARA AUTOS PREMIUM</h3>
+              <h3 className="text-2xl  font-semibold mb-2">EL MEJOR TALLER AUTOMOTRIZ PARA AUTOS PREMIUM</h3>
               <p className="text-gray-700 mb-4 text-base">
-                Boxen es un centro de alta ingeniería automotriz multimarca, con más de 15 años de experiencia en México, desarrollado específicamente para satisfacer las necesidades de servicios preventivos y correctivos de nuestros clientes, garantizando cada uno de los trabajos realizados mediante los más altos estándares de calidad, personal altamente calificado y herramienta especializada de punta.
-              </p>
+              Mincone Sport es una empresa de servicio automotriz, creada  en vista de no haber  un taller especialista alternativo de las grandes marcas de lujo y alta gama, con la misma confianza de una concesionaria de marca, Mincone Sport se fundo en 2016, sin embargo su fundador Domenico Mincone con estudios de 
+              Ingeniería Mecánica Automotriz en Italia, tiene mas de 25 años de experiencia en el rubro, especializándose en autos de alta gama y deportivos 
+              </p> 
               <div className="flex">
-                <button className="bg-gray-950 hover:bg-gray-900 transition-all duration-200 text-white rounded shadow-lg py-3 px-10">Nuestra empresa</button>
+                <button className="bg-primary hover:bg-gray-900 transition-all duration-200 text-white rounded shadow-lg py-3 px-10">Nuestra empresa</button>
               </div>
             </div>
             <div className="flex items-center justify-center">

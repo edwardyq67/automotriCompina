@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link, useNavigate } from 'react-router-dom'
 import { AccordionItem } from './AccordionItem'; // Asegúrate de que la ruta sea correcta
@@ -7,7 +7,20 @@ import { Accordionpc } from './Accordeonpc';
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const navigate = useNavigate();
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     const NavBarMenu = [
         {
             id: 1,
@@ -19,10 +32,10 @@ export default function NavBar() {
             titulo: "Servicios",
             Link: "/servicios",
             submenu: [
-                { titulo: "servicio1", Link: "/servicio1" },
-                { titulo: "servicio2", Link: "/servicio2" },
-                { titulo: "servicio3", Link: "/servicio3" },
-                { titulo: "servicio4", Link: "/servicio4" }
+                { titulo: "Mantenimiento preeventivo e inspeccion general", Link: "/servicio1" },
+                { titulo: "Mantenimiento correctivo", Link: "/servicio2" },
+                { titulo: "Reparacion de motores y transmisiones AT/MT", Link: "/servicio3" },
+                { titulo: "Planchado y Pintura", Link: "/servicio4" }
             ]
         },
         {
@@ -38,9 +51,12 @@ export default function NavBar() {
     ];
 
     return (
-        <nav className='bg-transparent fixed md:px-10 p-2 py-5 z-30 w-full border-b-[.1px] border-gray-800'>
+        <nav
+            className={`fixed md:px-10 p-2 py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
+                }`}
+        >
             <div className='flex justify-between items-center relative'>
-                <img className='h-[35px]' src="https://boxen.com.mx/wp-content/uploads/2024/04/boxen-white.webp" alt="" />
+                <img className='h-[35px]' src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725303756/images_app/logoAutomotriz-removebg-preview-transformed.webp" alt="" />
                 <ul className='hidden gap-4 justify-between md:flex'>
                     {NavBarMenu.map(menu => (
                         <li
@@ -51,7 +67,7 @@ export default function NavBar() {
                                 <Accordionpc title={menu.titulo}>
                                     <ul className="">
                                         {menu.submenu.map((sub, idx) => (
-                                            <li key={idx} className="text-gray-400 hover:text-white transition-all duration-200 text-lg py-1">
+                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-xl py-1">
                                                 <Link to={sub.Link}>{sub.titulo}</Link>
                                             </li>
                                         ))}
@@ -75,14 +91,14 @@ export default function NavBar() {
                     <div className="flex justify-end" >
                         <MdClose color='white' size={30} onClick={() => setOpen(!open)} />
                     </div>
-                    <ul className='font-semibold px-2 uppercase bg-primary text-black py-5  rounded-lg'>
+                    <ul className='font-semibold px-2 uppercase  text-black py-5  rounded-lg'>
                         {NavBarMenu.map(menu => (
                             <li key={menu.id} className='mb-4 text-2xl text-white'>
                                 {menu.submenu ? (
                                     <AccordionItem title={menu.titulo}>
-                                        <ul className="pl-4">
+                                        <ul className="pl-4 grid gap-2">
                                             {menu.submenu.map((sub, idx) => (
-                                                <li key={idx} className="text-white text-lg py-1">
+                                                <li key={idx} className=" text-white text-lg py-1">
                                                     <Link to={sub.Link}>{sub.titulo}</Link>
                                                 </li>
                                             ))}

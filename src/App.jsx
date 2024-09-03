@@ -6,12 +6,14 @@ import Contacto from './Pagination/Contacto'
 import Nosotros from './Pagination/Nosotros'
 import NavBar from './NavBarFooter/NavBar'
 import Footer from './NavBarFooter/Footer'
+import NavInfo from './NavBarFooter/NavInfo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <HashRouter>
+      <NavInfo/>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Inicio/>}/>

@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary:"#669850",
+        secondary:"#ff4f48"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

@@ -135,9 +135,21 @@ function Contacto() {
                     className="grid gap-1">
                     <h4 className='text-xl text-primary-800  font-semibold'>whatsapp</h4>
                     <ul className='grid gap-1'>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>976536498</li>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500  cursor-pointer text-black hover:scale-105'>957957609</li>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500  cursor-pointer text-black hover:scale-105'>986341390</li>
+                      <li className='flex gap-2  text-base justify-start font-light items-center hover:text-primary-400 transition-all duration-200 cursor-pointer hover:translate-x-2 hover:scale-105'>
+                        <a href="https://wa.me/51976536498" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <FaWhatsapp size={20} /> 976536498
+                        </a>
+                      </li>
+                      <li className='flex gap-2  text-base justify-start font-light items-center hover:text-primary-400 transition-all duration-200 cursor-pointer hover:translate-x-2 hover:scale-105'>
+                        <a href="https://wa.me/51957957609" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <FaWhatsapp size={20} /> 957957609
+                        </a>
+                      </li>
+                      <li className='flex gap-2 justify-start items-center hover:text-primary-400 transition-all duration-200 cursor-pointer hover:translate-x-2 hover:scale-105'>
+                        <a href="https://wa.me/51986341390" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <FaWhatsapp size={20} /> 986341390
+                        </a>
+                      </li>
                     </ul>
                   </motion.div>
                 </div>
@@ -155,31 +167,43 @@ function Contacto() {
                     animate={inView1 ? "visible" : {}}
                     className="grid">
                     <h4 className='text-xl text-primary-800  font-semibold'>Correo</h4>
-                    <ul className='grid gap-1'>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>cesar.delgado@minconesport.pe</li>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>dmincone@minconesport.pe</li>
-                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>juancarlos.arias@minconesport.pe</li>
+                    <ul className='grid '>
+                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>
+                        <a href="mailto:cesar.delgado@minconesport.pe">
+                          cesar.delgado@minconesport.pe
+                        </a>
+                      </li>
+                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>
+                        <a href="mailto:dmincone@minconesport.pe">
+                          dmincone@minconesport.pe
+                        </a>
+                      </li>
+                      <li className='text-base font-poppins transition-all duration-200 hover:text-primary-500 cursor-pointer text-black hover:scale-105'>
+                        <a href="mailto:juancarlos.arias@minconesport.pe">
+                          juancarlos.arias@minconesport.pe
+                        </a>
+                      </li>
                     </ul>
                   </motion.div>
                 </motion.div>
                 <motion.div
-                ref={ref2}
-                className="flex justify-evenly items-center max-w-60   ">
+                  ref={ref2}
+                  className="flex justify-evenly items-center max-w-60   ">
                   <motion.img
-                   initial={{ opacity: 0 }}
-                   animate={inView2 ? { opacity: 1 } : {}}
-                   transition={{ duration: .6, delay: .2 }}
-                  className='cursor-pointer hover:scale-105 transition-all duration-200 w-10' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" />
+                    initial={{ opacity: 0 }}
+                    animate={inView2 ? { opacity: 1 } : {}}
+                    transition={{ duration: .6, delay: .2 }}
+                    className='cursor-pointer hover:scale-105 transition-all duration-200 w-10' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" />
                   <motion.img
-                  initial={{ opacity: 0 }}
-                  animate={inView2 ? { opacity: 1 } : {}}
-                  transition={{ duration: .6, delay: .4 }}
-                  className='cursor-pointer hover:scale-105 transition-all duration-200 w-12 ml-4' src="https://t3.ftcdn.net/jpg/05/42/99/02/360_F_542990265_jDTgAc4HLdrhAt8TGxGySA4O3TcXtO0j.webp" alt="" />
+                    initial={{ opacity: 0 }}
+                    animate={inView2 ? { opacity: 1 } : {}}
+                    transition={{ duration: .6, delay: .4 }}
+                    className='cursor-pointer hover:scale-105 transition-all duration-200 w-12 ml-4' src="https://t3.ftcdn.net/jpg/05/42/99/02/360_F_542990265_jDTgAc4HLdrhAt8TGxGySA4O3TcXtO0j.webp" alt="" />
                   <motion.img
-                  initial={{ opacity: 0 }}
-                  animate={inView2 ? { opacity: 1 } : {}}
-                  transition={{ duration: .6, delay: .6 }}
-                  className='cursor-pointer hover:scale-105 transition-all duration-200 w-16' src="https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-Vertical-Logo.wine.svg" alt="" />
+                    initial={{ opacity: 0 }}
+                    animate={inView2 ? { opacity: 1 } : {}}
+                    transition={{ duration: .6, delay: .6 }}
+                    className='cursor-pointer hover:scale-105 transition-all duration-200 w-16' src="https://www.logo.wine/a/logo/TikTok/TikTok-Logomark%26Wordmark-Vertical-Logo.wine.svg" alt="" />
                 </motion.div>
               </div>
             </motion.div>

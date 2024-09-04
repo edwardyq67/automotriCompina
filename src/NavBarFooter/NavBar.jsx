@@ -80,7 +80,7 @@ export default function NavBar() {
                 </div>
             </div>
             <nav
-                className={`absolute py-5 z-20 w-full border-b-[0.1px] border-gray-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
+                className={`fixed py-5 z-20 w-full border-b-[0.1px] border-gray-800 transition-all duration-200 ${isScrolled ? 'bg-black translate-y-[-45px]' : 'bg-transparent'}`}
             >
 
                 <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">

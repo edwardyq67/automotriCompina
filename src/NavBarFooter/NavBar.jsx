@@ -52,7 +52,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed p-2  py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
+            className={`fixed py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
                 }`}
         >
             <div className='flex bg-red-500 max-w-[90vw] mx-auto justify-between items-center relative'>
@@ -83,7 +83,7 @@ export default function NavBar() {
                     <GiHamburgerMenu color='white' size={24} />
                 </div>
                 <div
-                    className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${open ? 'translate-x-0' : 'translate-x-full'
+                    className={`fixed top-0 right-0 z-40 h-screen overflow-y-auto transition-transform ${open ? 'translate-x-0' : 'translate-x-full'
                         } bg-white w-80 dark:bg-secondary-950`}
                     tabIndex="-1"
                     aria-labelledby="drawer-right-label"

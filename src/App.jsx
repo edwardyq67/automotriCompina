@@ -20,7 +20,7 @@ function App() {
     <div className='max-w-[100vw]'>
       <HashRouter>
         <ScrollToTop />
-        <NavInfo />
+        {/* <NavInfo /> */}
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio />} />

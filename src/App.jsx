@@ -11,12 +11,14 @@ import MantenimientoPreventivo from './Pagination/sevicios/MantenimientoPreventi
 import MantenimientoCorrectivo from './Pagination/sevicios/MantenimientoCorrectivo'
 import ReparacionMotores from './Pagination/sevicios/ReparacionMotores'
 import PlanchadoPintura from './Pagination/sevicios/PlanchadoPintura'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <NavInfo />
       <NavBar />
       <Routes>

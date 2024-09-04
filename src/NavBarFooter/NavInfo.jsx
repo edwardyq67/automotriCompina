@@ -32,7 +32,7 @@ function NavInfo() {
                 <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
                     <FaInstagram size={20} />
                 </div>
-                <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
+                <div className="">
                     <WhatappAcordeon />
                 </div>
             </div>

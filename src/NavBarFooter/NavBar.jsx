@@ -67,7 +67,7 @@ export default function NavBar() {
                                 <Accordionpc title={menu.titulo}>
                                     <ul className="">
                                         {menu.submenu.map((sub, idx) => (
-                                            <li key={idx} className="text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-base py-1">
+                                            <li key={idx} className="cursor-pointer text-nowrap text-gray-400 hover:text-white transition-all duration-200 text-base py-1">
                                                 <Link to={sub.Link}>{sub.titulo}</Link>
                                             </li>
                                         ))}
@@ -98,7 +98,7 @@ export default function NavBar() {
                                     <AccordionItem title={menu.titulo}>
                                         <ul className="pl-4 grid gap-2">
                                             {menu.submenu.map((sub, idx) => (
-                                                <li key={idx} className=" text-white text-lg py-1">
+                                                <li key={idx} className="cursor-pointer text-white text-lg py-1">
                                                     <Link to={sub.Link}>{sub.titulo}</Link>
                                                 </li>
                                             ))}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { AccordionItem } from './AccordionItem'; // Asegúrate de que la ruta sea correcta
@@ -12,7 +12,24 @@ import { WhatappAcordeon } from './WhatappAcordeon';
 export default function NavBar() {
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const location = useLocation();
+    const menuRef = useRef(null);
+
+    // Función para detectar clics fuera del menú
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        // Añadir evento de clic al documento
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // Limpiar el evento cuando el componente se desmonta
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -25,12 +42,7 @@ export default function NavBar() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    useEffect(() => {
-        // Cerrar el menú cuando la ubicación cambie
-        if (open) {
-            setOpen(false);
-        }
-    }, [location]);
+
     const NavBarMenu = [
         {
             id: 1,
@@ -82,7 +94,6 @@ export default function NavBar() {
             <nav
                 className={`fixed py-5 z-20 w-[100vw] border-b-[0.1px] border-gray-800  ${isScrolled ? 'bg-black top-0' : 'bg-transparent'}`}
             >
-
                 <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">
                     <img
                         className="h-[35px]"
@@ -118,6 +129,7 @@ export default function NavBar() {
                         <GiHamburgerMenu color="white" size={24} />
                     </div>
                     <div
+                        ref={menuRef}
                         className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform transform ${open ? 'translate-x-0' : 'translate-x-full'} bg-white w-80 dark:bg-secondary-950`}
                         tabIndex="-1"
                         aria-labelledby="drawer-right-label"

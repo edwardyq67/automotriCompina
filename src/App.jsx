@@ -17,7 +17,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='max-w-[100vw]'>
+    <div className='overflow-x-hidden'>
       <HashRouter>
         <ScrollToTop />
         {/* <NavInfo /> */}

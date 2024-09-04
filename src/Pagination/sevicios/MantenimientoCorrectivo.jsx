@@ -72,7 +72,7 @@ function MantenimientoCorrectivo() {
                             initial="hidden"
                             animate={inView1 ? "visible" : {}}
                             className="flex items-center justify-center">
-                            <img className="max-w-[760px] max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332648/images_app/mantenimiento-carro-mecanica-Jelpit_1.webp" alt="Taller Automotriz" />
+                            <img className="w-full h-full  md:max-w-[760px] md:max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332648/images_app/mantenimiento-carro-mecanica-Jelpit_1.webp" alt="Taller Automotriz" />
                         </motion.div>
                         <div className="flex flex-col justify-center p-4 font-poppins">
                             <motion.p

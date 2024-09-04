@@ -72,7 +72,7 @@ function PlanchadoPintura() {
                             initial="hidden"
                             animate={inView1 ? "visible" : {}}
                             className="flex items-center justify-center">
-                            <img className="max-w-[760px] max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725404404/images_app/Planchado-y-pintura.webp" alt="Taller Automotriz" />
+                            <img className="md:max-w-[760px] w-full h-full  md:max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725404404/images_app/Planchado-y-pintura.webp" alt="Taller Automotriz" />
                         </motion.div>
                         <div className="flex flex-col justify-center p-4 font-poppins">
 

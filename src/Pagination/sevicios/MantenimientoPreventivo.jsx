@@ -87,8 +87,8 @@ function MantenimientoPreventivo() {
                             variants={FadeLeft(.7)}
                             initial="hidden"
                             animate={inView1 ? "visible" : {}}
-                            className="flex items-center justify-center lg:order-2 order-1">
-                            <img className="max-w-[760px] max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332556/images_app/mantenimiento.webp" alt="Taller Automotriz" />
+                            className="flex items-center justify-center  lg:order-2 order-1">
+                            <img className="md:max-w-[760px] w-full h-full md:max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332556/images_app/mantenimiento.webp" alt="Taller Automotriz" />
                         </motion.div>
                     </div>
                 </div>

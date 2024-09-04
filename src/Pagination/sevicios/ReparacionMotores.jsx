@@ -89,7 +89,7 @@ function ReparacionMotores() {
                             initial="hidden"
                             animate={inView1 ? "visible" : {}}
                             className="flex items-center justify-center lg:order-2 order-1">
-                            <img className="max-w-[760px] max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332736/images_app/manos-sosteniendo-parte-de-un-motor.webp" alt="Taller Automotriz" />
+                            <img className="md:max-w-[760px] w-full h-full  md:max-h-[500px] rounded-none md:rounded-lg shadow-lg text-base" src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332736/images_app/manos-sosteniendo-parte-de-un-motor.webp" alt="Taller Automotriz" />
                         </motion.div>
                     </div>
                 </div>

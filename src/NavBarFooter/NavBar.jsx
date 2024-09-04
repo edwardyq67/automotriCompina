@@ -52,7 +52,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed p-2  py-5 z-20 w-[100vw] border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
+            className={`fixed p-2  py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
                 }`}
         >
             <div className='flex px-4 md:px-10 justify-between items-center relative'>

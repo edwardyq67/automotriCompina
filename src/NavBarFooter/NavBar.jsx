@@ -80,7 +80,7 @@ export default function NavBar() {
                 </div>
             </div>
             <nav
-                className={`fixed py-5 z-20 max-w-[100vw] border-b-[0.1px] border-gray-800  ${isScrolled ? 'bg-black top-0' : 'bg-transparent'}`}
+                className={`fixed py-5 z-20 w-[100vw] border-b-[0.1px] border-gray-800  ${isScrolled ? 'bg-black top-0' : 'bg-transparent'}`}
             >
 
                 <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">
@@ -89,7 +89,7 @@ export default function NavBar() {
                         src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725303756/images_app/logoAutomotriz-removebg-preview-transformed.webp"
                         alt="Logo"
                     />
-                    <ul className="hidden gap-4 md:flex">
+                    <ul className="hidden gap-4 lg:flex">
                         {NavBarMenu.map(menu => (
                             <li
                                 key={menu.id}

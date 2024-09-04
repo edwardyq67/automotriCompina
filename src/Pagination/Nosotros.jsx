@@ -73,7 +73,7 @@ function Nosotros() {
           variants={FadeLeft(.4)}
           initial="hidden"
           animate={inView1 ? "visible" : {}}
-          className='relative py-10 sm:py-20 section-background '>
+          className='relative py-10 sm:py-20 '>
           Mincone Sport es una empresa de servicio automotriz, creada  en vista de no haber  un taller especialista alternativo de las grandes marcas de lujo y alta gama, con la misma confianza de una concesionaria de
           marca, Mincone Sport se fundo en 2016, sin embargo su fundador Domenico Mincone con estudios de Ingeniería Mecánica Automotriz en Italia, tiene mas de 25 años de experiencia en el rubro, especializándose
           en autos de alta gama y deportivos (como Ferrari,Lamborghini,Alfa & Romeo ,Maserati ,Porsche ,McLaren ,etc)

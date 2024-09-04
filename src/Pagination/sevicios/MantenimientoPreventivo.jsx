@@ -54,12 +54,12 @@ function MantenimientoPreventivo() {
                         className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Mantén tu camino seguro con nuestro mantenimiento preventivo. </motion.p>
                 </div>
 
-                <div className="relative h-[100vh]">
+                <div className="relative h-[90vh]">
                     <motion.img
                         initial={{ opacity: 0 }}
                         animate={inView0 ? { opacity: 1 } : {}}
                         transition={{ duration: 1, delay: .1 }}
-                        className="w-full h-full object-cover  " src="https://boxen.com.mx/wp-content/uploads/2024/04/Banner02.webp" alt="" />
+                        className="w-full h-full object-cover  " src="https://boxen.com.mx/wp-content/uploads/2024/04/Banner04.webp" alt="" />
                     <div
                         className="absolute w-full h-full top-0"
                         style={{ backgroundColor: `rgba(0, 0, 0, .6)` }}
@@ -68,7 +68,7 @@ function MantenimientoPreventivo() {
             </motion.section>
             <motion.section
                 ref={ref1}
-                className="relative py-10 sm:py-20 px-4 "
+                className="container relative py-10 sm:py-20 px-4 "
             >
                 <div className=" relative">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">

@@ -41,7 +41,7 @@ function ReparacionMotores() {
         <main >
             <motion.section
                 ref={ref0}
-                className="w-full h-auto relative bg-black ">
+                className=" h-auto relative bg-black ">
                 <div className="absolute inset-x-0 bottom-0 w-full z-10 grid gap-2 pb-10 md:pb-20 px-2 sm:px-0">
                     <motion.h1
                         initial={{ opacity: 0 }}
@@ -55,7 +55,7 @@ function ReparacionMotores() {
                         className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Potencia y precisión restauradas, para que cada kilómetro cuente. </motion.p>
                 </div>
 
-                <div className="relative h-[100vh]">
+                <div className="relative md:h-[100vh] h-[50vh]">
                     <motion.img
                         initial={{ opacity: 0 }}
                         animate={inView0 ? { opacity: 1 } : {}}
@@ -69,7 +69,7 @@ function ReparacionMotores() {
             </motion.section>
             <motion.section
                 ref={ref1}
-                className="relative py-10 sm:py-20 px-4 "
+                className="container relative py-10 sm:py-20 px-4 "
             >
                 <div className=" relative">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">

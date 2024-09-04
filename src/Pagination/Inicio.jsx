@@ -110,8 +110,8 @@ function Inicio() {
           }}
           onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex)}
           modules={[EffectFade, Autoplay, Pagination, Navigation]}
-          className="mySwiper w-full h-full bg-black"
-          style={{ height: "100vh" }}
+          className="mySwiper  bg-black"
+          style={{ height: "90vh" }}
         >
           {imagenIncion.map((imgInicio, index) => (
             <SwiperSlide key={imgInicio.id} className="relative">

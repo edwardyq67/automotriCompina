@@ -32,7 +32,7 @@ function Nosotros() {
   }
   ]
   return (
-    <main className='w-[100vw]'>
+    <main className=''>
       <motion.section
         ref={ref0}
         className="w-full h-auto relative bg-black ">
@@ -49,12 +49,12 @@ function Nosotros() {
             className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Cuidamos tu vehículo como si fuera el nuestro. </motion.p>
         </div>
 
-        <div className="relative min-h-40">
+        <div className="relative m  min-h-40">
           <motion.img
             initial={{ opacity: 0 }}
             animate={inView0 ? { opacity: 1 } : {}}
             transition={{ duration: 1, delay: .1 }}
-            className=" w-full min-h-60 " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
+            className="w.full min-h-60 " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
           <div
             className="absolute w-full h-full top-0"
             style={{ backgroundColor: `rgba(0, 0, 0, .6)` }}
@@ -73,7 +73,7 @@ function Nosotros() {
           variants={FadeLeft(.4)}
           initial="hidden"
           animate={inView1 ? "visible" : {}}
-          className='relative py-10 sm:py-20 '>
+          className='text-gray-700 mb-10 text-base '>
           Mincone Sport es una empresa de servicio automotriz, creada  en vista de no haber  un taller especialista alternativo de las grandes marcas de lujo y alta gama, con la misma confianza de una concesionaria de
           marca, Mincone Sport se fundo en 2016, sin embargo su fundador Domenico Mincone con estudios de Ingeniería Mecánica Automotriz en Italia, tiene mas de 25 años de experiencia en el rubro, especializándose
           en autos de alta gama y deportivos (como Ferrari,Lamborghini,Alfa & Romeo ,Maserati ,Porsche ,McLaren ,etc)

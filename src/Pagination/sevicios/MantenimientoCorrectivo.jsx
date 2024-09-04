@@ -54,7 +54,7 @@ function MantenimientoCorrectivo() {
                         className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Restauramos el rendimiento de tu vehículo, devolviendo la confianza en cada trayecto. </motion.p>
                 </div>
 
-                <div className="relative h-[100vh]">
+                <div className="relative h-[90vh]">
                     <motion.img
                         initial={{ opacity: 0 }}
                         animate={inView0 ? { opacity: 1 } : {}}
@@ -68,7 +68,7 @@ function MantenimientoCorrectivo() {
             </motion.section>
             <motion.section
                 ref={ref1}
-                className="relative py-10 sm:py-20 px-4 "
+                className="container relative py-10 sm:py-20 px-4 "
             >
                 <div className=" relative">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 z-20">

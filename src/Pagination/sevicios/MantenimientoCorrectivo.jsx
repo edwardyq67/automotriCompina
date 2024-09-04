@@ -2,7 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Fadebot, FadeLeft, FadeRight } from '../../utility/animation';
+import { useNavigate } from 'react-router-dom';
 function MantenimientoCorrectivo() {
+    const navigate = useNavigate()
     const sections = Array(4).fill(0).map(() => useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -17,18 +19,21 @@ function MantenimientoCorrectivo() {
             img: "https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332556/images_app/mantenimiento.webp",
             p: "Confía en nuestra experiencia para mantener tu vehículo en óptimas condiciones, asegurando su rendimiento y seguridad."
             , delay: .2
+            , navigate: "/mantenimientoPreventivo"
         }, {
             id: 2,
             title: "Reparacion de motores y transmisiones AT/MT",
             img: "https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332736/images_app/manos-sosteniendo-parte-de-un-motor.webp",
             p: "Restauramos el rendimiento óptimo de tu vehículo, asegurando potencia y eficiencia."
             , delay: .4
+            , navigate: "/reparacionMotores"
         }, {
             id: 3,
             title: "Planchado y Pintura",
             img: "https://res.cloudinary.com/dcwdddwnh/image/upload/v1725332828/images_app/pintura_2.webp",
             p: "Devolvemos la apariencia original a tu vehículo con acabados de alta calidad."
             , delay: .6
+            , navigate: "/planchadoPintura"
         }
     ]
     return (
@@ -86,6 +91,7 @@ function MantenimientoCorrectivo() {
                                 variants={FadeLeft(.4)}
                                 initial="hidden"
                                 animate={inView1 ? "visible" : {}}
+                                onClick={() => navigate("/contacto")}
                                 className="flex">
                                 <button className="bg-primary-500 hover:bg-primary-600 transition-all duration-200 text-white rounded shadow-lg py-3 px-10">Contactanos</button>
                             </motion.div>
@@ -111,7 +117,7 @@ function MantenimientoCorrectivo() {
                                     initial="hidden"
                                     animate={inView2 ? "visible" : {}}
                                     className="max-w-md mx-auto shadow-lg border border-gray-200 rounded-lg  ">
-                                    <button className='overflow-hidden h-60' >
+                                    <button onClick={() => navigate(valorServicio.navigate)} className='overflow-hidden h-60' >
                                         <img className="hover:scale-105  transition-all duration-[500ms] rounded-t-lg" src={valorServicio.img} alt="" />
                                     </button>
                                     <div className="p-5 grid ">
@@ -125,6 +131,7 @@ function MantenimientoCorrectivo() {
                                         </p>
                                         <div>
                                             <button
+                                            onClick={() => navigate(valorServicio.navigate)}
                                                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none "
                                             >
                                                 Saber más

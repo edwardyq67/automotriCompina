@@ -32,7 +32,7 @@ function Nosotros() {
   }
   ]
   return (
-    <main className='bg-white'>
+    <main className=''>
       <motion.section
         ref={ref0}
         className="w-full h-auto relative bg-black ">

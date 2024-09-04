@@ -58,7 +58,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed py-5 z-20 w-full border-b-[0.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
+            className={`absolute py-5 z-20 w-full border-b-[0.1px] border-gray-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
         >
             <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">
                 <img

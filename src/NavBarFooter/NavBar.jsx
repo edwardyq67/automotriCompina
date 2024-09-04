@@ -5,6 +5,9 @@ import { AccordionItem } from './AccordionItem'; // Asegúrate de que la ruta se
 import { MdClose } from 'react-icons/md';
 import { Accordionpc } from './Accordeonpc';
 import NavInfo from './NavInfo';
+import { SiGmail } from 'react-icons/si';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { WhatappAcordeon } from './WhatappAcordeon';
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
@@ -59,7 +62,23 @@ export default function NavBar() {
 
     return (
         <div>
-            {/* <NavInfo /> */}
+            <div className={`hidden md:flex w-full px-4 text-white bg-secondary-950 py-1 z-20 justify-between items-center `}>
+                <div className="flex text-white hover:text-primary-600 transition-all duration-200 items-center gap-2">
+                    <SiGmail />
+                    <span className='cursor-pointer'>cesar.delgado@minconesport.pe</span>
+                </div>
+                <div className="flex gap-0 sm:gap-5">
+                    <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
+                        <FaFacebook size={20} />
+                    </div>
+                    <div className="p-2 bg-transparent hover:bg-primary-600 rounded-md cursor-pointer transition-all duration-300">
+                        <FaInstagram size={20} />
+                    </div>
+                    <div className="">
+                        <WhatappAcordeon />
+                    </div>
+                </div>
+            </div>
             <nav
                 className={`absolute py-5 z-20 w-full border-b-[0.1px] border-gray-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
             >

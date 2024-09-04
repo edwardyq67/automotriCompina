@@ -55,7 +55,7 @@ export default function NavBar() {
             className={`fixed p-2  py-5 z-20 w-full border-b-[.1px] border-gray-800 transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'
                 }`}
         >
-            <div className='flex px-4 md:px-10 justify-between items-center relative'>
+            <div className='flex bg-red-500 px-4 md:px-10 justify-between items-center relative'>
                 <img className='h-[35px]' src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725303756/images_app/logoAutomotriz-removebg-preview-transformed.webp" alt="" />
                 <ul className='hidden gap-4 justify-between md:flex'>
                     {NavBarMenu.map(menu => (

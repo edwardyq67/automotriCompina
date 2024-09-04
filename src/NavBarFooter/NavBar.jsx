@@ -60,7 +60,7 @@ export default function NavBar() {
         <nav
             className={`absolute py-5 z-20 w-full border-b-[0.1px] border-gray-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}
         >
-            <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">
+            <div className="flex bg-blue-600 max-w-[90vw] mx-auto justify-between items-center relative">
                 <img
                     className="h-[35px]"
                     src="https://res.cloudinary.com/dcwdddwnh/image/upload/v1725303756/images_app/logoAutomotriz-removebg-preview-transformed.webp"

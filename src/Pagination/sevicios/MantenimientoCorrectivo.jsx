@@ -59,7 +59,7 @@ function MantenimientoCorrectivo() {
                         initial={{ opacity: 0 }}
                         animate={inView0 ? { opacity: 1 } : {}}
                         transition={{ duration: 1, delay: .1 }}
-                        className="w-full h-full object-cover  " src="https://boxen.com.mx/wp-content/uploads/2024/04/Banner02.webp" alt="" />
+                        className="w-full h-full object-cover  " src="https://boxen.com.mx/wp-content/uploads/2024/04/Banner03.webp" alt="" />
                     <div
                         className="absolute w-full h-full top-0"
                         style={{ backgroundColor: `rgba(0, 0, 0, .6)` }}

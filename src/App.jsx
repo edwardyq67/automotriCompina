@@ -17,22 +17,25 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <HashRouter>
-      <ScrollToTop />
-      <NavInfo />
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<Inicio />} />
-        <Route path='/nosotros' element={<Nosotros />} />
-        <Route path='/contacto' element={<Contacto />} />
-        {/* servicios */}
-        <Route path='/mantenimientoPreventivo' element={<MantenimientoPreventivo />} />
-        <Route path='/mantenimientoCorrectivo' element={<MantenimientoCorrectivo />} />
-        <Route path='/reparacionMotores' element={<ReparacionMotores />} />
-        <Route path='/planchadoPintura' element={<PlanchadoPintura />} />
-      </Routes>
-      <Footer />
-    </HashRouter>
+    <div className='max-w-[100vw]'>
+      <HashRouter>
+        <ScrollToTop />
+        <NavInfo />
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/nosotros' element={<Nosotros />} />
+          <Route path='/contacto' element={<Contacto />} />
+          {/* servicios */}
+          <Route path='/mantenimientoPreventivo' element={<MantenimientoPreventivo />} />
+          <Route path='/mantenimientoCorrectivo' element={<MantenimientoCorrectivo />} />
+          <Route path='/reparacionMotores' element={<ReparacionMotores />} />
+          <Route path='/planchadoPintura' element={<PlanchadoPintura />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
+    </div>
+
   )
 }
 

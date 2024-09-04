@@ -37,7 +37,7 @@ function PlanchadoPintura() {
         },
     ]
     return (
-        <main>
+        <main >
             <motion.section
                 ref={ref0}
                 className="w-full h-auto relative bg-black">

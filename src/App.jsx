@@ -21,7 +21,8 @@ function App() {
       <HashRouter>
         <ScrollToTop />
         {/* <NavInfo /> */}
-        <NavBar />
+        {/* <NavBar /> */}
+        
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/nosotros' element={<Nosotros />} />

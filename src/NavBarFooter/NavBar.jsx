@@ -130,7 +130,7 @@ export default function NavBar() {
                     </div>
                     <div
                         ref={menuRef}
-                        className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform transform ${open ? 'translate-x-0' : 'translate-x-full'} bg-white w-80 dark:bg-secondary-950`}
+                        className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform transform ${open ? 'translate-x-0' : 'translate-x-full'} w-80 dark:bg-secondary-950`}
                         tabIndex="-1"
                         aria-labelledby="drawer-right-label"
                     >

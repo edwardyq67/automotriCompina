@@ -32,7 +32,7 @@ function Nosotros() {
   }
   ]
   return (
-    <main className=''>
+    <main className='w-[100vw]'>
       <motion.section
         ref={ref0}
         className="w-full h-auto relative bg-black ">
@@ -54,7 +54,7 @@ function Nosotros() {
             initial={{ opacity: 0 }}
             animate={inView0 ? { opacity: 1 } : {}}
             transition={{ duration: 1, delay: .1 }}
-            className=" w-full min-h-60  " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
+            className=" w-full min-h-60 " src="http://res.cloudinary.com/dcwdddwnh/image/upload/v1725342530/images_app/automotive-01-1920px.webp" alt="" />
           <div
             className="absolute w-full h-full top-0"
             style={{ backgroundColor: `rgba(0, 0, 0, .6)` }}

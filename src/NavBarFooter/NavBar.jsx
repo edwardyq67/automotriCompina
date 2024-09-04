@@ -80,7 +80,7 @@ export default function NavBar() {
                 </div>
             </div>
             <nav
-                className={`fixed py-5 z-20 max-w-[100vw] border-b-[0.1px] border-gray-800  ${isScrolled ? 'bg-black top-0' : 'bg-transparent'}`}
+                className={`fixed py-5 z-20 w-[100vw] border-b-[0.1px] border-gray-800  ${isScrolled ? 'bg-black top-0' : 'bg-transparent'}`}
             >
 
                 <div className="flex max-w-[90vw] mx-auto justify-between items-center relative">
@@ -117,7 +117,7 @@ export default function NavBar() {
                     <div className="md:hidden flex" onClick={() => setOpen(!open)}>
                         <GiHamburgerMenu color="white" size={24} />
                     </div>
-                    <div
+                    {/* <div
                         className={`fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform transform ${open ? 'translate-x-0' : 'translate-x-full'} bg-white w-80 dark:bg-secondary-950`}
                         tabIndex="-1"
                         aria-labelledby="drawer-right-label"
@@ -144,7 +144,7 @@ export default function NavBar() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </div>

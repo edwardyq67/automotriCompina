@@ -110,8 +110,8 @@ function Inicio() {
           }}
           onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex)}
           modules={[EffectFade, Autoplay, Pagination, Navigation]}
-          className="mySwiper  bg-black"
-          style={{ height: "90vh" }}
+          className="mySwiper w-full h-full bg-black"
+          style={{ height: "100vh" }}
         >
           {imagenIncion.map((imgInicio, index) => (
             <SwiperSlide key={imgInicio.id} className="relative">
@@ -138,8 +138,8 @@ function Inicio() {
       </motion.section>
       <motion.section
         ref={ref1}
-        className='container py-20 sm:py-40'>
-        <div className="grid sm:flex justify-center  gap-y-10 md:gap-y-20 sm:justify-around gap-x-2">
+        className='container py-20 sm:py-40 px-4'>
+        <div className="grid sm:flex justify-center gap-y-10 md:gap-y-20 sm:justify-around gap-x-2">
           <motion.div
             variants={FadeLeft(.2)}
             initial="hidden"

@@ -54,7 +54,7 @@ function MantenimientoCorrectivo() {
                         className='text-xl md:text-2xl font-poppins font-medium text-center text-gray-200'>Restauramos el rendimiento de tu vehículo, devolviendo la confianza en cada trayecto. </motion.p>
                 </div>
 
-                <div className="relative h-[90vh]">
+                <div className="relative h-[100vh]">
                     <motion.img
                         initial={{ opacity: 0 }}
                         animate={inView0 ? { opacity: 1 } : {}}
